@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="this is html class project">
+  <!-- meta name="description이걸 잘 적용해줘야, 최상단 노출 가능? 데이터설정방법 // viewport(반응형) / pc전용일경우는 기입x-->
+
+  <meta property="og:title" content="">
+  <meta property="og:image" content="">
+  <!-- og:open graph라는뜻//링크를 걸었을때, 어떤 타이틀 or 어떤 이미지를  -->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <!-- fontawesome cdn쳐서 복붙해도 됨 위의 link처럼 -->
+  <!-- <script src="https://kit.fontawesome.com/355afbf77a.js" crossorigin="anonymous"></script> -->
+
+  <!-- <script src="js/parallax.min.js"></script> js파일은 다 넣고, 같은건데 축약버전/개발용/프로덕션용으로 구분됨 지금은 개발중이니까 개발용 parallax.js로 쓰고, 나중에 다 작성후 웹에 호스팅할때는 min.js로 바꿔서 올려야함 -->
+  <!-- 처음부터 그렇게 하지 않는 이유는? 개발용으로 해야 버그가 잡힘 프로덕션용은 버그가 잡히지 않음 -->
+
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto&display=swap"
+    rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/parallax.js"></script>
+
+  <title>jQuery_VUETIFY</title>
+</head>
+
+<body>
+  <header>
+    <i class="fab fa-vuejs logo"></i>
+    <h1>VUETIFY</h1>
+  </header>
+  <div class="view">
+    <div class="main_banner">
+      <img src="img/banners.jpg" alt="mainimg">
+      <div class="main_copy">
+        <div class="flex-item">WELCOME TO</div>
+        <div class="flex-item big-font">VUETIFY</div>
+      </div>
+    </div>
+  </div>
+  <div class="about-me">
+    <div class="flex-item" style="opacity:0">
+      <h1>ABOUT ME</h1>
+      <div class="divider"></div>
+      <p>Vuetify is the #1 component library for Vue.js and has been in active development since 2016. The goal of the
+        project is to provide users with everything that is needed to build rich and engaging web applications using
+        the Material Design specification. It accomplishes that with a consistent update cycle, Long-term Support
+        (LTS) for previous versions, responsive community engagement, a vast ecosystem of resources and a dedication
+        to quality components.</p>
+      <img class="profile-img" src="img/iu.jpg" alt="iu">
+
+      <div>
+        <button id="btn1">VUETIFY DOCUMENTATION</button>
+      </div>
+
+    </div>
+  </div>
+  <div class="playground">
+    <ul id="list1">
+      <li>리스트1</li>
+      <li>리스트2</li>
+      <li>리스트3</li>
+      <li>리스트4</li>
+      <li>리스트5</li>
+      <li>리스트6</li>
+      <li>리스트7</li>
+      <li>리스트8</li>
+      <li>리스트9</li>
+      <li>리스트10</li>
+    </ul>
+    <ul id="list2">
+      <li>리스트11</li>
+      <li>리스트12</li>
+      <li>리스트13</li>
+      <li>리스트14</li>
+      <li>리스트15</li>
+      <li>리스트16</li>
+      <li>리스트17</li>
+      <li>리스트18</li>
+      <li>리스트19</li>
+      <li>리스트20</li>
+    </ul>
+  </div>
+  <div class="features">
+    <h1>VUETIFY FEATURES</h1>
+    <div class="divider"></div>
+    <div class="wrapper" id="feature-wrapper">
+      <!-- <div class="feature-item">
+          <div class="feature-avatar">
+            <i class="fas fa-air-freshener feature-icon"></i>
+          </div>
+          <h2>VIBRANT COMMUNITY</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto cupiditate sint possimus quidem atque harum excepturi nemo velit tempora! Enim inventore fuga, qui ipsum eveniet facilis obcaecati corrupti asperiores nam</p>
+        </div>
+
+        <div class="feature-item">
+          <div class="feature-avatar">
+            <i class="fas fa-history feature-icon"></i>
+          </div>
+          <h2>FREQUENT UPDATES</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto cupiditate sint possimus quidem atque harum excepturi nemo velit tempora! Enim inventore fuga, qui ipsum eveniet facilis obcaecati corrupti asperiores nam</p>
+        </div>
+
+        <div class="feature-item">
+          <div class="feature-avatar">
+            <i class="fas fa-shield-alt feature-icon"></i>
+          </div>
+          <h2>LONG-TERM SUPPORT</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto cupiditate sint possimus quidem atque harum excepturi nemo velit tempora! Enim inventore fuga, qui ipsum eveniet facilis obcaecati corrupti asperiores nam</p>
+        </div> -->
+    </div>
+  </div>
+  <div class="parallax-window">
+    <div class="parallax-wrapper">
+    </div>
+  </div>
+
+
+  <footer></footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

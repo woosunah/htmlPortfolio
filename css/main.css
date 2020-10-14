@@ -1,0 +1,162 @@
+@charset "UTF-8";
+
+
+html {
+  color: #222;
+  font-size: 1rem;
+  line-height: 1.4;
+  font-family: 'Noto Sans KR', 'Roboto', sans-serif;
+}
+
+header {
+  position: fixed;
+  height: 60px;
+  padding: 0 20px;
+  background: #fff;
+  width: 100%;
+}
+
+button {
+  padding: 10px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  background: transparent;
+  color: gray;
+}
+
+.logo {
+  font-size: 3rem;
+}
+
+header>h1 {
+  display: inline-block;
+  margin: 10px 0 0 20px;
+  vertical-align: super;
+}
+
+.divider {
+  width: 56px;
+  margin: 0 auto 32px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  height: 5px;
+  opacity: 0.5;
+}
+
+.view {
+  padding: 60px 0;
+}
+
+.main_banner {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.main_banner>img {
+  width: 100%;
+  height: auto;
+  min-height: 485px;
+  object-fit: cover;
+  /* 사이즈 축소될때, 이미지 깨짐 방지 object-fit */
+}
+
+.main_copy {
+  position: absolute;
+}
+
+.main_copy>.flex-item {
+  font-size: 50px;
+  color: #fff;
+  text-align: center;
+}
+
+.main_copy>.big-font {
+  font-weight: 900;
+  font-size: 90px;
+}
+
+.about-me {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  padding: 96px;
+  text-align: Center;
+}
+
+.about-me .flex-item {
+  max-width: 585px;
+}
+
+.about-me p {
+  font-weight: 300;
+}
+
+.about-me .profile-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  object-fit: cover;
+  margin-bottom: 30px;
+  box-shadow: 1px 6px 14px 0px rgba(0, 0, 0, 0.75);
+}
+
+.features {
+  padding:20px;
+  background:#eee;
+  text-align:center;
+}
+.features .wrapper{
+  display:flex;
+  flex-flow: row;
+  justify-content:center;
+}
+.features .feature-item{
+  width:200px;
+  margin:0 10px;
+  background-color:#fff;
+  padding:20px;
+}
+.feature-avatar{
+  width:100px;
+  height:100px;
+  border-radius:50px;
+  background-color:#1776d1;
+  display:inline-block;
+  
+}
+.feature-icon {
+  color:#fff;
+  font-size:3rem;
+  margin-top:25px;
+}
+
+.parallax-window {
+  min-height: 400px;
+  background: transparent;
+}
+.parallax-wrapper {
+  color:#fff;
+  text-align:center;
+  /* font-size:1.5rem; */
+  display:flex;
+  flex-flow:row;
+}
+
+@media only screen and (max-width:768px) {
+  .main_copy>.flex-item {
+    font-size: 30px;
+  }
+  .main_copy>.big-font {
+    font-size: 60px;
+  }
+  .features .wrapper {
+    flex-flow:column;
+  }
+  .features .feature-item {
+    width:100%;
+    margin:10px 0;
+  }
+
+}
